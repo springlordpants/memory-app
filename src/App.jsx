@@ -3,6 +3,7 @@ import { connect } from "react-redux"
 import { addReminder, deleteReminder, clearReminders } from "./actions"
 import moment from "moment"
 import "./styles/styles.css"
+import { BiListPlus } from "react-icons/bi"
 
 class App extends Component {
   constructor(props) {
@@ -73,7 +74,7 @@ class App extends Component {
             className="btn btn-success"
             onClick={() => this.addReminder()}
           >
-            Add Reminder
+            <BiListPlus classsName="add-reminder-button" />
           </button>
         </div>
         {this.renderReminders()}
@@ -81,7 +82,7 @@ class App extends Component {
           className="btn btn-danger"
           onClick={() => this.props.clearReminders()}
         >
-          Clear Clear Reminders
+          Clear Reminders
         </button>
       </div>
     )
