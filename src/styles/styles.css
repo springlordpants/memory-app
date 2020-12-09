@@ -21,8 +21,30 @@ input {
   margin: 5px;
 }
 
+@media (max-width: 500px) {
+  input {
+    margin: 20px 0;
+  }
+}
+
 .reminder-form {
   padding: 5px;
+}
+
+@media (max-width: 500px) {
+  .reminder-form {
+    display: block;
+  }
+}
+
+.list-group {
+  margin: 15px 0 5px;
+}
+
+@media (max-width: 500px) {
+  .list-group-item {
+    margin: 0 20px;
+  }
 }
 
 .list-item {
@@ -34,10 +56,6 @@ input {
   padding-left: 5px;
   color: red;
   cursor: pointer;
-}
-
-.add-reminder-button {
-  font-size: 25px;
 }
 
 .clear-button {

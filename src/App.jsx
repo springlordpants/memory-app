@@ -68,13 +68,15 @@ class App extends Component {
               }
             />
           </div>
-          <button
-            type="button"
-            className="btn btn-success"
-            onClick={() => this.addReminder()}
-          >
-            <BiListPlus size="1.5em" />
-          </button>
+          <div>
+            <button
+              type="button"
+              className="btn btn-success"
+              onClick={() => this.addReminder()}
+            >
+              <BiListPlus size="1.5em" />
+            </button>
+          </div>
         </div>
         {this.renderReminders()}
         <button
