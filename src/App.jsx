@@ -32,10 +32,7 @@ class App extends Component {
               <div className="list-item">
                 <p>{reminder.text}</p>
                 <small>
-                  <em>
-                    {moment(new Date(reminder.dueDate)).to("2021-11-5")} from
-                    the 5th of November
-                  </em>
+                  <em>{moment(new Date(reminder.dueDate)).fromNow()}</em>
                 </small>
               </div>
               <div
@@ -54,12 +51,12 @@ class App extends Component {
   render() {
     return (
       <div className="App">
-        <h1 className="title">Remember Remember</h1>
+        <h1 className="title">Memory App</h1>
         <div className="form-inline reminder-form">
           <div className="form-group">
             <input
               className="form-control"
-              placeholder="Guy Fawkes things..."
+              placeholder="Remember to..."
               onChange={(event) => this.setState({ text: event.target.value })}
             />
             <input
@@ -76,7 +73,7 @@ class App extends Component {
             className="btn btn-success"
             onClick={() => this.addReminder()}
           >
-            Add Vendetta
+            Add Reminder
           </button>
         </div>
         {this.renderReminders()}
@@ -84,7 +81,7 @@ class App extends Component {
           className="btn btn-danger"
           onClick={() => this.props.clearReminders()}
         >
-          Clear Vendettas
+          Clear Clear Reminders
         </button>
       </div>
     )
