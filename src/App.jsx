@@ -68,18 +68,17 @@ class App extends Component {
               }
             />
           </div>
-
           <button
             type="button"
             className="btn btn-success"
             onClick={() => this.addReminder()}
           >
-            <BiListPlus classsName="add-reminder-button" />
+            <BiListPlus size="1.5em" />
           </button>
         </div>
         {this.renderReminders()}
         <button
-          className="btn btn-danger"
+          className="btn btn-danger clear-button"
           onClick={() => this.props.clearReminders()}
         >
           Clear Reminders

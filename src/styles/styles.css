@@ -1,5 +1,5 @@
 .App {
-  padding-top: 20px;
+  padding-top: 50px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,6 +10,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  font-family: "PT Serif", serif;
 }
 
 .title {
@@ -33,5 +34,13 @@ input {
   padding-left: 5px;
   color: red;
   cursor: pointer;
+}
+
+.add-reminder-button {
+  font-size: 25px;
+}
+
+.clear-button {
+  margin: 5px;
 }
 /*# sourceMappingURL=styles.css.map */
